@@ -7,7 +7,7 @@ let db;
 async function getDb() {
   if (db) return db;
   db = await open({
-    filename: path.join(__dirname, '../../database.sqlite'),
+    filename: path.join(__dirname, '../database.sqlite'),
     driver: sqlite3.Database,
   });
 
